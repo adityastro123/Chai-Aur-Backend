@@ -3,7 +3,7 @@
 // };
 
 const asyncHandler = (fn) => (req, res, next) => {
-  Promise.resolve(fn(req, res, next)).catch((err) => {
+  return Promise.resolve(fn(req, res, next)).catch((err) => {
     //this can handle both async and sync errors smoothly
     next(err);
   });
