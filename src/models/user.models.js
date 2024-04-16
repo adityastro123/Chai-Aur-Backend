@@ -38,7 +38,7 @@ const userSchema = new Schema(
     coverImage: {
       type: String,
     },
-    passowrd: {
+    password: {
       type: String,
       required: [true, "Password is required"],
     },
